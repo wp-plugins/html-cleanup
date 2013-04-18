@@ -3,7 +3,7 @@
 Plugin Name: HTML Cleanup
 Plugin URI: https://davidlyness.com/plugins/html-cleanup
 Description: A plugin to filter lines of outputted HTML in public pages based on predefined regular expressions.
-Version: 1.0
+Version: 1.0.1
 Author: David Lyness
 Author URI: https://davidlyness.com
 License: GPLv2
