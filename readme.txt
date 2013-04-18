@@ -11,17 +11,17 @@ Allows you to strip out lines of HTML based on predefined regular expressions.
 
 == Description ==
 
-This plugin allows you to specify patterns of HTML that will be removed from the final output. You can define such patterns as normal text (e.g. "test123" will remove all lines in the output HTML containing "test123") or as a regular expression (e.g. "<!--.*-->" will remove all HTML comments in the output).
+This plugin allows you to specify patterns of HTML that will be removed from the final output. You can define such patterns as normal text (e.g. "penguin" will remove all lines in the output HTML containing "penguin") or as a regular expression (e.g. "<b>.*</b>" will remove all single lines of bold text).
 
-For more information on regular expressions, see [http://www.regular-expressions.info].
+For more information on regular expressions, see [regular-expressions.info](http://www.regular-expressions.info).
 
-If you come across any bugs in the plugin, or if you have any suggestions on how to make it better, contact me using [https://davidlyness.com/contact](my website) or use the Wordpress plugin support forums.
+If you come across any bugs in the plugin, or if you have any suggestions on how to make it better, contact me using [my website](https://davidlyness.com/contact) or use the Wordpress plugin support forums.
 
 == Installation ==
 
 1. Upload the plugin folder to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Configure the plugin using the 'HTML Cleanup' option in the "Settings" menu 
+3. Configure the plugin to your liking using the 'HTML Cleanup' option in the "Settings" menu 
 
 == Screenshots ==
 
@@ -29,5 +29,8 @@ If you come across any bugs in the plugin, or if you have any suggestions on how
 
 == Changelog ==
 
-= 0.1 =
-* Initial release
+= 1.0.1 =
+* Fixed typos in plugin readme / description.
+
+= 1.0 =
+* Initial release.
