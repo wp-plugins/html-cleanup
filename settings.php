@@ -43,7 +43,7 @@ function register_html_cleanup_settings() {
 	if (get_option('cleanup_comment') === false) {
 		update_option('cleanup_comment', "on");
 	}
-	add_settings_field('html_cleanup_comment', 'Include comment in page header?', 'text_html_cleanup_comment', 'html_cleanup', 'html_cleanup_comment_settings');
+	add_settings_field('html_cleanup_comment', 'Insert HTML comment in header?', 'text_html_cleanup_comment', 'html_cleanup', 'html_cleanup_comment_settings');
 }
 
 // Generate a random string of characters to use as the cleanup override parameter
@@ -69,10 +69,9 @@ function text_html_cleanup_blacklist() {
 
 // Output the descriptive text for the plugin's override options on the "Settings" page
 function text_html_cleanup_override_settings() {
-	echo "<p>You can provide a string of characters that can be specified as a URL parameter to temporarily disable <i>HTML Cleanup</i>'s activity. A string is automatically generated for you - save a blank value in this field to re-generate the override string. It is recommended that you choose a string of characters that is not easily guessable - otherwise visitors to your site could guess the pattern and see all the lines of HTML you are hiding.</p>";
+	echo "<p>You can provide a string of characters that, if specified as a URL parameter, will temporarily disable HTML Cleanup's activity. (This is useful for viewing your unfiltered page without disabling HTML Cleanup.) A string is automatically generated for you below - save a blank value in this field to re-generate the override string. It is recommended that you choose a string of characters that is not easily guessable - otherwise visitors to your site could guess the pattern and see all the lines of HTML you are hiding.</p>";
 	$overrideLink = home_url() . "?cleanupoverride=" . get_option('cleanup_override');
 	echo "<p><b>Usage</b>: <a href='" . $overrideLink . "'>" . $overrideLink . "</a></p>";
-	echo "<p>";
 }
 
 // Output the comment checkbox on the plugin's "Settings" page
@@ -82,7 +81,7 @@ function text_html_cleanup_override() {
 
 // Output the descriptive text for the plugin's comment options on the "Settings" page
 function text_html_cleanup_comment_settings() {
-	echo "<p>By default, the <i>HTML Cleanup</i> plugin inserts a comment into the header of public pages. This allows you to test the filtering capabilities of the plugin - try specifying <b>3UYbKPTEsahhppWL</b> as a blacklisted pattern above to remove it.</p>";
+	echo "<p>By default, HTML Cleanup inserts a comment into the header of public pages. This allows you to test the filtering capabilities of the plugin - try specifying <b>3UYbKPTEsahhppWL</b> as a blacklisted pattern above to remove it.</p>";
 	echo "<p>Once you're happy with how the plugin works, you can uncheck the box below to turn the comment off completely.</p>";
 }
 
