@@ -30,7 +30,7 @@ function register_html_cleanup_settings() {
 	if (get_option('blacklisted_patterns') === false) {
 		update_option('blacklisted_patterns', "");
 	}
-	add_settings_field('html_cleanup_blacklisted_patterns', 'List of patterns to blacklist', 'text_html_cleanup_blacklist', 'html_cleanup', 'html_cleanup_blacklist_settings');
+	add_settings_field('html_cleanup_blacklisted_patterns', 'Patterns to blacklist', 'text_html_cleanup_blacklist', 'html_cleanup', 'html_cleanup_blacklist_settings');
 	
 	register_setting('html_cleanup_group', 'blacklist_replace_flag');
 	if (get_option('blacklist_replace_flag') === false) {
