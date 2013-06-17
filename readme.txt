@@ -1,6 +1,6 @@
 === HTML Cleanup ===
 Contributors: davidlyness
-Donate link: https://davidlyness.com/donate
+Donate link: https://supporters.eff.org/donate
 Tags: html, replace, remove, filter, regex, regular expression
 Requires at least: 3.5.1
 Tested up to: 3.5.1
@@ -46,6 +46,9 @@ There is also a method to temporarily disable filtering by appending an override
 
 == Changelog ==
 
+= 1.2.1 =
+* Compatibility with versions of PHP prior to v5.3.
+
 = 1.2.0 =
 * HTML Cleanup can now replace blacklisted HTML patterns as well as removing them.
 
@@ -60,5 +63,5 @@ There is also a method to temporarily disable filtering by appending an override
 
 == Upgrade Notice ==
 
-= 1.2.0 =
-HTML Cleanup can now replace blacklisted HTML patterns as well as removing them.
+= 1.2.1 =
+HTML Cleanup is now compatible with versions of PHP prior to v5.3.
