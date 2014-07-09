@@ -46,6 +46,9 @@ There is also a method to temporarily disable filtering by appending an override
 
 == Changelog ==
 
+= 1.2.2 =
+* Ensure PHP doesn't generate a notice regarding an undefined index.
+
 = 1.2.1 =
 * Compatibility with versions of PHP prior to v5.3.
 
@@ -63,5 +66,5 @@ There is also a method to temporarily disable filtering by appending an override
 
 == Upgrade Notice ==
 
-= 1.2.1 =
-HTML Cleanup is now compatible with versions of PHP prior to v5.3.
+= 1.2.2 =
+HTML Cleanup now no longer causes PHP to generate a notice regarding an undefined index.
