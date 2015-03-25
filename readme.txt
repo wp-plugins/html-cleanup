@@ -46,6 +46,9 @@ There is also a method to temporarily disable filtering by appending an override
 
 == Changelog ==
 
+= 1.2.3 =
+* Remove unnecessary PHP notice in admin area when WP_DEBUG is enabled.
+
 = 1.2.2 =
 * Ensure PHP doesn't generate a notice regarding an undefined index.
 
@@ -66,5 +69,5 @@ There is also a method to temporarily disable filtering by appending an override
 
 == Upgrade Notice ==
 
-= 1.2.2 =
-HTML Cleanup now no longer causes PHP to generate a notice regarding an undefined index.
+= 1.2.3 =
+HTML Cleanup now no longer causes PHP to generate a notice regarding deleting / flushing a buffer in the admin area when WP_DEBUG is enabled.
